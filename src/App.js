@@ -94,10 +94,6 @@ export default function App() {
           </div>
         )}
       </div>
-      <div className="ad-container">
-        <p>Advertisement</p>
-        <div className="ad-placeholder">Your Ad Here</div>
-      </div>
       <div className="description-block">
         <h2>About Nick2Pic</h2>
         <p>
