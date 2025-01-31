@@ -1,0 +1,11 @@
+{
+    "name": "Nick To Pic",
+    "short_name": "Nick2Pic",
+    "description": "A Bring your nick to real life with Nick2Pic.",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000"
+}
