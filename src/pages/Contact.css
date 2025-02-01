@@ -1,0 +1,39 @@
+/* General container */
+.contact-container {
+    text-align: center;
+  }
+  
+  /* Title */
+  .contact-container h1 {
+    font-family: 'Minecraft', sans-serif;
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 25px;
+  }
+  
+  /* Description */
+  .contact-container p {
+    color: #555;
+    margin-bottom: 0;
+  }
+  
+  /* Links */
+  .contact-container a {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-container a:hover {
+    color: #0056b3;
+  }
+  
+  /* Social media title */
+  .contact-container h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-top: 20px;
+  }
+  
