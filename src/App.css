@@ -1,9 +1,3 @@
-/* Importing custom font */
-@font-face {
-  font-family: 'Minecraft';
-  src: url('./fonts/Minecraft.ttf') format('truetype');
-}
-
 /* General Reset */
 * {
   margin: 0;
@@ -11,204 +5,42 @@
   box-sizing: border-box;
 }
 
+/* Body styles */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: rgb(226, 226, 226);
+  background-color: #f4f4f4;
   color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  padding: 20px;
 }
 
-/* Container Styles */
-.app-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+/* Navigation styles - Fixed at the top */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 500px;
-}
-
-.card {
-  background-color: rgb(250, 250, 250);
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
   text-align: center;
-  width: 100%;
 }
 
-.title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 15px;
+/* Navigation links */
+nav a {
   color: #007bff;
-}
-
-.description-block {
-  background-color: rgb(250, 250, 250);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 100%;
-  max-width: 600px;
-  margin-top: 20px;
-}
-
-.description-block h2 {
-  font-size: 1.5rem;
-  color: #007bff;
-  margin-bottom: 10px;
-}
-
-.description-block p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
-}
-
-.input {
-  background-color: rgb(245, 245, 245);
-  border: 1px solid rgb(204, 204, 204);
-  color: #333;
-  padding: 12px;
-  border-radius: 6px;
-  font-size: 16px;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.input:focus {
-  outline: none;
-  border-color: #007bff;
-  background-color: rgb(250, 250, 250);
-}
-
-.slider-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: 15px 0;
-}
-
-.slider-container label {
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: #555;
-}
-
-input[type=range] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 10px;
-  border-radius: 4px;
-  background: #ddd;
-  outline: none;
-  opacity: 0.7; 
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-  transition: opacity .2s;
-}
-
-input[type=range]:hover {
-  opacity: 1; /* Fully shown on mouse-over */
-}
-
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #007bff;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-input[type=range]::-webkit-slider-thumb:hover {
-  background: #0056b3;
-}
-
-input[type=range]::-moz-range-thumb {
-  width: 25px; /* Set a specific slider handle width */
-  height: 25px; /* Slider handle height */
-  background: #04AA6D; /* Green background */
-  cursor: pointer; /* Cursor on hover */
-}
-
-.button-group {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.button {
-  padding: 12px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: none;
-  flex: 1;
-}
-
-.button.primary {
-  background-color: #007bff;
-  color: white;
-}
-
-.button.primary:hover {
-  background-color: #0056b3;
-  transform: scale(1.03);
-}
-
-.button.success {
-  background-color: #28a745;
-  color: white;
-}
-
-.button.success:hover {
-  background-color: #218838;
-  transform: scale(1.03);
-}
-
-.button.disabled {
-  background-color: #6c757d;
-  color: #ccc;
-  cursor: not-allowed;
-}
-
-.image-preview {
-  margin-top: 20px;
-}
-
-.image-preview img {
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.footer {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.footer a {
-  color: #333;
   text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
+  font-size: 16px;
 }
 
-.footer a:hover {
-  color: #007bff;
+nav a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Adjust the main content to avoid overlap with the fixed nav */
+main {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 50px; /* Ensure content starts below the navbar */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
