@@ -16,13 +16,13 @@ export default function Home() {
     if (!nickname) return;
 
     try {
-      await document.fonts.load("40px Minecraft");
+      await document.fonts.load("40px Minecraftia");
     } catch (error) {
       console.error("Font failed to load:", error);
       return;
     }
 
-    context.font = "100px Minecraft";
+    context.font = "100px Minecraftia";
     const textWidth = context.measureText(nickname).width;
     const textHeight = 100;
 
@@ -33,7 +33,7 @@ export default function Home() {
     context.globalAlpha = backgroundOpacity;
     context.fillRect(0, 0, canvas.width, canvas.height);
 
-    context.font = "100px Minecraft";
+    context.font = "100px Minecraftia";
     context.fillStyle = "#ffffff";
     context.globalAlpha = 1;
     context.textAlign = "center";
