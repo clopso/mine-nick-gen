@@ -16,7 +16,7 @@ export default function Home() {
     if (!nickname) return;
 
     try {
-      await document.fonts.load("40px Minecraftia");
+      await document.fonts.load("100px Minecraftia");
     } catch (error) {
       console.error("Font failed to load:", error);
       return;

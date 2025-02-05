@@ -1,7 +1,7 @@
 /* Importing custom font */
 @font-face {
   font-family: "Minecraftia";
-  src: url("../assets/fonts/Minecraftia.ttf") format("truetype");
+  src: url("../assets/fonts/MinecraftSeven.otf") format("opentype"),
 }
 
 /* General Reset */
